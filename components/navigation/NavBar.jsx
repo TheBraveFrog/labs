@@ -14,7 +14,7 @@ import {AiFillGithub} from "react-icons/ai"
                 <li><Link className="text-red-500 font-large" href="/records">Records</Link></li>
                 <li>
                     <figure className="text-rose-600 font-medium flex items-center">
-                    <figcaption><Link className="text-red-500 font-large" href="https://github.com/TheBraveFrog/LABS-DMIT-2008" target="_blank">Github</Link></figcaption>
+                    <figcaption><Link className="text-red-500 font-large" href="https://github.com/TheBraveFrog/labs" target="_blank">Github</Link></figcaption>
                     <AiFillGithub size={20}/>
                 </figure>
                 </li>
