@@ -13,7 +13,7 @@ function SingleRecordCard ({artist, description, label, producer, rating, releas
             <p>{tracks}</p>
             <p>{sales}</p>
             <p>{rating}</p>
-            <Link className='text-blue-600 font-semibold' href={`/record`}>Back to Records Page</Link>
+            <Link className='text-blue-600 font-semibold' href={`/records`}>Back to Records Page</Link>
            </aside>
     )
   }
