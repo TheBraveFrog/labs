@@ -5,8 +5,8 @@ import {NavBar} from "../../../components/navigation/NavBar"
 import {SingleRecordCard} from "../../../components/card/SingleRecordCard"
 import { getRecords } from "@/lib/firebase/getRecords"
 
-async function getRecord(id) {
-  const payload = await getRecord()
+async function getRecords(id) {
+  const payload = await getRecords()
   const records = Object.values(payload)
   const singleRecord = records.find(item => item.id == id)
   return singleRecord
@@ -15,7 +15,7 @@ async function getRecord(id) {
 
  async function RecordPage ({params}) {
   const id = params.id
-  const recordData = await getRecord(id)
+  const recordData = await getRecords(id)
  
  
    return(
