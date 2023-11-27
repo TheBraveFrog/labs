@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { PageHeader } from "../../../components/header/PageHeader"
 import {NavBar} from "../../../components/navigation/NavBar"
 import {SingleRecordCard} from "../../../components/card/SingleRecordCard"
-import { getRecord } from "@/lib/firebase/getRecords"
+import { getRecord } from "@/lib/firebase/getRecord"
 
 async function getRecord(id) {
   const payload = await getRecord()
