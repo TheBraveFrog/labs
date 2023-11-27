@@ -3,10 +3,10 @@ import Link from 'next/link'
 import { PageHeader } from "../../../components/header/PageHeader"
 import {NavBar} from "../../../components/navigation/NavBar"
 import {SingleRecordCard} from "../../../components/card/SingleRecordCard"
-import { getRecords } from "@/lib/firebase/getRecords"
+import { getRecord } from "@/lib/firebase/getRecords"
 
-async function getRecords(id) {
-  const payload = await getRecords()
+async function getRecord(id) {
+  const payload = await getRecord()
   const records = Object.values(payload)
   const singleRecord = records.find(item => item.id == id)
   return singleRecord
@@ -15,7 +15,7 @@ async function getRecords(id) {
 
  async function RecordPage ({params}) {
   const id = params.id
-  const recordData = await getRecords(id)
+  const recordData = await getRecord(id)
  
  
    return(
