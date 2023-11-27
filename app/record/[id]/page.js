@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import { PageHeader } from "../../components/header/PageHeader"
-import {NavBar} from "../../components/navigation/NavBar"
-import {SingleRecordCard} from "../../components/card/SingleRecordCard"
+import { PageHeader } from "../../../components/header/PageHeader"
+import {NavBar} from "../../../components/navigation/NavBar"
+import {SingleRecordCard} from "../../../components/card/SingleRecordCard"
  
 
  async function RecordPage () {
