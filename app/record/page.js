@@ -1,6 +1,8 @@
+import Link from 'next/link'
 
 import { PageHeader } from "../../components/header/PageHeader"
 import {NavBar} from "../../components/navigation/NavBar"
+import {SingleRecordCard} from "../../components/card/SingleRecordCard"
  
 
  async function RecordPage () {
@@ -11,15 +13,16 @@ import {NavBar} from "../../components/navigation/NavBar"
    return(
     <>
     <NavBar/>
-    <PageHeader title="Singular Record Display"/>
-    <main className=" min-h-screen py-24">
-          
+    <PageHeader title="Single Record Display" tagline=""/>
+    <main className="py-6 flex flex-wrap justify-center">
+      {
+        values.map(item=> <SingleRecordCard key={item.id} {...item}/>)
+      }
      </main>
+     <Footer/>
     </>
    )
   
-  
-}
-
+ }
 
 export default RecordPage
