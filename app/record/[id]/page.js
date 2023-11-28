@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { PageHeader } from "../../../components/header/PageHeader"
+import { Footer } from "../../../components/footer/Footer"
 import {NavBar} from "../../../components/navigation/NavBar"
 import {SingleRecordCard} from "../../../components/card/SingleRecordCard"
 import {getRecords} from "@/lib/firebase/getRecords"
