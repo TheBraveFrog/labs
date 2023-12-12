@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import BuyNow from 'BuyNowForm'
+import BuyNow from 'components/buy/BuyNowForm'
 
 
 function SingleRecordCard ({artist, description, label, producer, rating, release_date, sales, title, tracks }){

@@ -1,4 +1,5 @@
 import { headers } from "next/headers";
+import { stripe } from "@/lib/stripe";
 
 async function POST(request) {
 // Remove the console.clear statement upload your
