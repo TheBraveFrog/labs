@@ -14,13 +14,29 @@ const checkoutSession = await stripe.checkout.sessions.create({
 mode: "payment",
 line_items: [
 {
-price: '{{price_1OMH8PHk25vonLhFRyiLU8SX}}',
+price: '{{price_1OMGQ5Hk25vonLhFO95PiF3n}}',
 quantity: 1,
 },
 {
-    price: '{{price_1OMH7KHk25vonLhFQO8RNO68}}',
+    price: '{{price_1OMGdYHk25vonLhFrj69oJ5r}}',
     quantity: 1,
     },
+    {
+        price: '{{price_1OMGhNHk25vonLhFhdsmUDLP}}',
+        quantity: 1,
+        },
+        {
+            price: '{{price_1OMGiLHk25vonLhFO0zKwAZP}}',
+            quantity: 1,
+            },
+            {
+                price: '{{price_1OMGjHHk25vonLhFf9DSvziH}}',
+                quantity: 1,
+                },
+                {
+                    price: '{{price_1OMGndHk25vonLhFWed6RY2J}}',
+                    quantity: 1,
+                    },
 ],
 success_url: `${headers().get("origin")}/success`,
 cancel_url: `${headers().get("origin")}/canceled`,
