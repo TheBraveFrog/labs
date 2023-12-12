@@ -1,4 +1,4 @@
-import BuyNow from 'BuyNowForm'
+import BuyNow from 'components/buy/BuyNowForm'
 import Link from 'next/link'
 import {BsCart2} from "react-icons/bs" 
 
