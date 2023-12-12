@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import BuyNow from 'components/BuyNowForm'
 
 
 function SingleRecordCard ({artist, description, label, producer, rating, release_date, sales, title, tracks }){
@@ -14,6 +15,7 @@ function SingleRecordCard ({artist, description, label, producer, rating, releas
             <p>Tracks: {tracks}</p>
             <p>Number Sold: {sales}</p>
             <p>Rating: {rating}</p>
+            <BuyNow/>
             <Link className='text-blue-600 font-semibold' href={`/records`}>Back to Records Page</Link>
            </aside>
     )
