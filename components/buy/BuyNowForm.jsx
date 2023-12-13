@@ -1,7 +1,7 @@
 function BuyNow({priceId}) {
     return (
     <form
-    action="/api/checkout"
+    action="app/api/checkout"
     method="POST"
     >
     <input
