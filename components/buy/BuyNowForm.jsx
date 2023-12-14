@@ -16,3 +16,6 @@ function BuyNow({ priceId }) {
     </form>
   );
 }
+  
+  export { BuyNow };
+  
