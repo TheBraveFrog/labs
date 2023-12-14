@@ -1,7 +1,7 @@
 function BuyNow({ priceId }) {
   console.log(priceId);
   return (
-    <form action="/api/checkout" method="POST">
+    <form action="app/api/checkout" method="POST">
       <input type="hidden" name="id" value="from dashboard" />
       {/* ADD THE PRICE ID TO THE HIDDEN FIELD */}
       <input type="hidden" name="price" value={priceId} />
