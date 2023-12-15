@@ -1,5 +1,3 @@
-// pages/api/checkout/[...nextauth].js
-
 import { stripe } from "@/lib/stripe";
 
 export default async function handler(req, res) {
